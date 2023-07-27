@@ -1,88 +1,122 @@
 *{
-    margin:0
-}
-
-body {
-    /* scroll test */
-    height: 2000px;
-}
-
-.background {
-    color: #EEF6FC;
-}
-
-a{
-    text-decoration: none;
-    color: #131316;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-a:hover {
-    color: #FFFFFF;
-}
-nav {
-    background-color: #abd7eb;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-.navbar {
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo {
-    margin-right: 10px;
-}
-.links {
-    display: flex;
-    list-style: none;
-    margin: 0;
     padding: 0;
-    justify-content: center;
-}
-.links li {
-    margin: 0 10px;
-}
-.action_btn {
-    background-color: #FFFFFF; 
-    color: #131316; 
-    padding: 8px 16px;
-    border-radius: 4px;
+    margin: 0;
     text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
-.toggle_btn {
-    color: #05539A;
+  body{
+    font-family: montserrat;
 }
-
-.home-message{
+  nav{
+    background: #8AC4FF;
+    height: 80px;
+    width: 100%;
+}
+  nav ul{
+    float: right;
+    margin-right: 20px;
+}
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+  nav ul li a{
+    color: #000000;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+  a:hover {
+    color: #007FFF; 
+}
+  a.active {
+    background: #F8F9FB;
+    transition: .5s;
+    color: #03045E;
+}
+  .home-message {
     color: #05539A;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-align: left;
 }
-
-.register_btn {
+  .register_btn {
     background-color: #66B2FF;
-    padding: 1rem 4rem;
-    margin-top: 2rem;
+    padding: 7px 13px;
     color: #000000;
-    border-radius: 8px;
+    border-radius: 20px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-right: 5%;
 }
-
-.home-left{
+  .home-left {
     padding: 35px;
 }
-
-.toggle_btn {
+  .toggle_btn {
     color: #001933;
+}
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+  #check{
+    display: none;
+}
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+}
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #0066CC;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #F8F9FB;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+}
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
 }
 .image-container img {
     height: 250%;
@@ -114,89 +148,7 @@ nav {
     background-color: #8EBDEC;
     padding: 15px 9%;
     padding-bottom: 100px;
-    width: 100%;
-}
-
-.container-2 {
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-  
-.card-holder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 800px; /* Adjust the max-width as needed */
-}
-  
-.card {
-    width: calc(33.33% - 20px); /* Adjust the card width and margins to fit the container */
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-  
-.card img {
-    width: 100%;
-    height: 150px; /* Adjust the card image height as needed */
-    object-fit: cover;
-}
-  
-.card-content {
-    padding: 15px;
-}
-
-h3 {
-    margin: 0;
-    font-size: 20px;
- }
-  
-p {
-    margin-top: 8px;
-    color: #777;
-}
-  
-.btn {
-    display: block;
-    margin-top: 12px;
-    padding: 8px 16px;
-    background-color: #05539A;
-    color: #fff;
-    border-radius: 20px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-  
-.btn:hover {
-    background-color: #001933;
-}
-  
-.card-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-  
-.card-icons i {
-    font-size: 16px;
-    color: #777;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-  
-.card-icons i:hover {
-    color: #00ffff;
-}
-  
-.card:hover {
-    transform: scale(1.05);
+    height: 200vh;
 }
 
 .container-3{
