@@ -150,7 +150,130 @@
     padding-bottom: 100px;
     height: 200vh;
 }
+.cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Wrap cards to a new row if needed */
+  justify-content: space-between; /* Optional: Adjust the spacing between cards */
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 20px
+}
+.content{
+  flex-basis: 30%; /* Adjust this value to set the width of each card */
+  margin: 10px;
+  padding: 15px;
+  border: 2px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FEF9EF; 
+  position: relative;
+}
+.content-1 {
+  background-color: #FEF9EF; 
+}
+.content-2 {
+  background-color: #FEF9EF; 
+}
+.content-3 {
+  background-color: #FEF9EF; 
+}
+.content-4 {
+  background-color: #FEF9EF;
+}
+.content-5 {
+  background-color: #FEF9EF;
+}
+.content > *{
+  flex: 1 1 100%;
+}
+.content:hover{
+  
+}
+.content:hover a{
+  
+}
+.content-1:hover{
+ 
+}
+.content-1:hover a{
+  
+}
+.content-2:hover{
+  
+}
+.content-2:hover a{
+  
+}
+.content-3:hover{
+  
+}
+.content-3:hover a{
+  
+}
+.content-4:hover {
 
+}
+.content-4:hover a {
+
+}
+.content-5:hover {
+
+}
+.content-5:hover a {
+
+}
+.content h2{
+  font-size: 24px;
+  margin: 12px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+  flex-grow: 1;
+}
+.content a{
+  margin: 22px 0;
+  background: #66B2FF;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+  margin-top: 10px;
+}
+.content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+    flex-basis: 100%; /* Set to full width on smaller screens */
+  }
+}
+.content img {
+  width: 100%; /* Adjust the image width to fit the container */
+  height: auto; /* Maintain the aspect ratio */
+  border: 2px solid black;
+}
 .container-3{
     color: aqua;
 }

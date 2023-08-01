@@ -34,7 +34,7 @@
                 REGISTER Now!
                 to Book Unforgettable
                 Photo and Video Experiences</p>
-            <a href="registerpage.php" class="register_btn">Register</a>
+            <a href="loginsignin.php" class="register_btn">Register</a>
         </div>
         <div class="w-100">
             <h1>PUT CALENDER HERE</h1>
@@ -57,22 +57,64 @@
             Our dedicated photo and video booking services are designed to capture the essence of your most treasured events. 
             Whether it's a dream wedding, a memorable celebration, or an intimate gathering, we're here to turn your vision into stunning reality. 
             Cherish your priceless moments with us.</h4>
-
-         <div class="cards">
-            <div class="card">
-                <img src="./images/Corporate.png">
-                <div class="card__content">
-                    <h3>Corporate Events</h3>
-                    <p>seminars,  product launches, team building activities, corporate parties</P>
+            
+            <div class="cards">
+         <div class="services">
+            <div class="content content-1">
+            <img src="./images/Corporate.png" alt="Corporate Events">
+               <h2>
+                  Corporate Events
+               </h2>
+               <p>
+               seminars,  product launches, team building activities, corporate parties 
+               </p>
+               <a href="#" class="btn">Book</a>
             </div>
-
-            <div class="card">
-                <img src="./images/Corporate.png">
-                <div class="card__content">
-                    <h3>Corporate Events</h3>
-                    <p>seminars,  product launches, team building activities, corporate parties</P>
+            <div class="content content-2">
+            <img src="./images/Weddings.png" alt="Weddings">
+               <h2>
+                  Weddings
+               </h2>
+               <p>
+               engagement parties, ceremonies, bridal shower,  receptions
+               </p>
+               <a href="#" class="btn">Book</a>
             </div>
-    </div>
+            <div class="content content-3">
+            <img src="./images/Social.png" alt="Social Events">
+               <h2>
+                  Social Events
+               </h2>
+               <p>
+               birthday,  anniversaries, baby showers, graduations 
+               </p>
+               <a href="#" class="btn">Book</a>
+            </div>
+        </div>
+            <div class="services">
+            <div class="content content-4">
+            <img src="./images/Portrait.png" alt="Portrait">
+                <h2>
+                    Portraits
+                </h2>
+                <p>
+                family portraits,  senior portraits, lifestyle photography
+                </p>
+            <a href="#" class="btn">Book</a>
+            </div>
+            <div class="content content-5">
+            <img src="./images/Commercial.png" alt="Commercial Shoots">
+                <h2>
+                    Commercial Shoots
+                </h2>
+                <p>
+                advertising campaigns, fashion shoot
+                </p>
+            <a href="#" class="btn">Book</a>
+            </div>
+         </div>
+      </div>
+
     <div class="container-3">
     <!-- <img class="image-wave" src="./images/wave.png" alt="" height="220px" width="100%"> -->
 </body>
